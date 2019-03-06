@@ -1,0 +1,32 @@
+# two versions of function that creates square
+def kwadrat(n):
+   for i in range(n):
+      for j in range(n):   
+         print ("*", end="")
+      print()
+      
+def kwadrat2(n):
+   for i in range(n):
+      print (n * "#")      
+  
+# we want to make 5 squares with sides made of successive odd numbers of *  and 5 with sides made of successive numbers of #
+print
+x=0
+for i in range(9):
+   
+   
+   if i % 2 == 0:   
+      print ("Przebieg:",x)
+      print (20 * "-")
+      kwadrat(3+i)
+      x=x+1
+   print()       
+         
+for i in range(5):
+   
+   
+   print ("Przebieg:",x)
+   x=x+1
+   print (20 * "-")
+   kwadrat2(3+i)
+   print()    
